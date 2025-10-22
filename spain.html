@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spain - UX Design | Mustapha Ismael Omar</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="spain.css">
 </head>
 
 <body>
@@ -15,8 +15,8 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <i class="fas fa-globe-europe"></i>
-                    <span>Mustapha Omar</span>
+                    <div class="spain-flag"></div>
+                    <span>The Spanish Edition - <i class="fas fa-globe-europe"></i> Mustapha Ismael Omar</span>
                 </div>
                 <div class="mobile-toggle">
                     <i class="fas fa-bars"></i>
@@ -34,57 +34,543 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="page-hero spain-hero">
+    <section class="page-hero spain-hero" id="top">
         <div class="container">
             <div class="page-hero-content">
                 <h1>Spain - UX Design</h1>
                 <p>Creating intuitive and effective digital experiences through user-centered design principles and methodologies.</p>
-                <a href="#overview" class="btn">Explore the Experience</a>
             </div>
         </div>
     </section>
 
-    <!-- Coming Soon Section -->
-    <section class="content-section week-overview" id="overview">
+    <!-- Travel to Spain and First Impressions -->
+    <section class="content-section" id="travel">
+
+        <div class="hero-buttons">
+            <a href="#travel" class="btn">Travel & First Impressions</a>                
+            <a href="#weeks-tabs" class="btn">Weekly Experiences</a>
+            <a href="#intercultural-tabs" class="btn">Intercultural Experiences</a>
+            <a href="#learning-tabs" class="btn">Learning Outcomes</a>
+        </div>
+
         <div class="container">
             <div class="section-title">
-                <h2>Coming Soon</h2>
-                <p>This page is currently under development. Check back later for my Spain UX Design experiences!</p>
-            </div>
-            <div class="overview-grid">
-                <div class="overview-card">
-                    <div class="overview-header">
-                        <h3><i class="fas fa-palette"></i> User Experience Design</h3>
-                    </div>
-                    <div class="overview-body">
-                        <p>This section will detail my work with UX Design principles and methodologies during the Spain module.</p>
-                        <p>Information about user research, prototyping, and usability testing will be added here.</p>
-                    </div>
-                </div>
-                
-                <div class="overview-card">
-                    <div class="overview-header">
-                        <h3><i class="fas fa-lightbulb"></i> Design Thinking</h3>
-                    </div>
-                    <div class="overview-body">
-                        <p>Details about design thinking processes and creative problem-solving approaches will be documented here.</p>
-                        <p>This will include case studies and project examples from the Spain module.</p>
-                    </div>
-                </div>
-                
-                <div class="overview-card">
-                    <div class="overview-header">
-                        <h3><i class="fas fa-users"></i> User-Centered Approach</h3>
-                    </div>
-                    <div class="overview-body">
-                        <p>Key learnings about putting users at the center of the design process will be showcased here.</p>
-                        <p>This will include both technical skills and cultural insights from working in Spain.</p>
-                    </div>
-                </div>
+                <h2>Travel to Spain and First Impressions</h2>
             </div>
             
+            <div class="content-card">
+                <p>After completing our three weeks in the Netherlands, we travelled to Spain for the next part of the Global Acting in IT Minor. We left Eindhoven on Friday and spent a night in Veldhoven before flying to Barcelona on Saturday afternoon.</p>
+                
+                <p>When we arrived in Barcelona, the city was alive. There was a huge festival going on, with rides, food stalls, fireworks, and bands performing in almost every direction. The energy was completely different from what we had just experienced in the Netherlands. People were loud, expressive, and full of life. Marco and Jan got a bit carried away and ended up playing on a seesaw in a park that night, it has became one of the funniest memories of the trip so far and is still part of our photo gallery.</p>
+                
+                <p>The next day, we took a long four-hour train ride from Barcelona to Lleida. We chose the longer route along the coast and through the mountains because we wanted to see more of Spain. The ride was quiet and scenic, the coastal towns slowly gave way to farmlands and mountains before we reached Lleida.</p>
+                
+                <p>When we arrived, we moved into a small apartment that we rented for the duration of our stay. It was the first time during the minor that we had a proper kitchen, which instantly made life easier. We could finally cook our own meals instead of eating out every day, and it gave us a more homely feeling.</p>
+                
+                <div class="highlight-box">
+                    <p>My first impression of Spain was that it felt warmer and more social than the Netherlands. The people here are more passionate and expressive, and there is a sense that everyone lived in the moment. Compared to the Netherlands, where everything was structured and organized, Spain is more relaxed and spontaneous. For example, people didn't wait for the traffic light to turn green before crossing, something you would never see in Eindhoven. It reminded me a lot of South Africa; more energy, less formality, and a mix of order and chaos that somehow worked.</p>
+                </div>
+                
+                <p>I also noticed a few differences in everyday life. In the Netherlands, bicycles were everywhere, and sustainability was a major focus. In Spain, the streets were filled with scooters and motorcycles instead. There is less of an emphasis on environmental awareness, but more on mobility and convenience. It is a completely different rhythm of life, but one that I quickly learned to enjoy as it is very much similar to home.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weeks in Spain Tab Section -->
+    <section class="tab-section" id="weeks-tabs">
+        <div class="container">
+            <div class="section-title">
+                <h2>Weeks in Spain</h2>
+                <p>My weekly experiences and learnings during the UX Design module</p>
+            </div>
+            
+            <div class="tab-container">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="week1">
+                        <i class="fas fa-calendar-week"></i> Week 1
+                    </button>
+                    <button class="tab-btn" data-tab="week2">
+                        <i class="fas fa-calendar-week"></i> Week 2
+                    </button>
+                    <button class="tab-btn" data-tab="week3">
+                        <i class="fas fa-calendar-week"></i> Week 3
+                    </button>
+                </div>
+                
+                <!-- Week 1 Tab -->
+                <div class="tab-content active" id="week1">
+                    <div class="content-card">
+                        <div class="week-with-images">
+                            <div class="week-images">
+                                <div class="week-image">
+                                    <img src="images/gallery/spain/1.jpg" alt="Loading Error">
+                                </div>
+                                <div class="week-image">
+                                    <img src="images/gallery/spain/13.jpg" alt="Loading Error">
+                                </div>
+                                <div class="week-image">
+                                    <img src="images/gallery/spain/31.jpg" alt="Loading Error">
+                                </div>
+                                <div class="week-image">
+                                    <img src="images/gallery/spain/34.jpg" alt="Loading Error">
+                                </div>
+                                <div class="week-image">
+                                    <img src="images/gallery/spain/54.jpg" alt="Loading Error">
+                                </div>
+                                <div class="week-image">
+                                    <img src="images/gallery/spain/63.jpg" alt="Loading Error">
+                                </div>
+                                <div class="week-image">
+                                    <img src="images/gallery/spain/64.jpg" alt="Loading Error">
+                                </div>
+                                <div class="week-image">
+                                    <img src="images/gallery/spain/67.jpeg" alt="Loading Error">
+                                </div>
+                            </div>
+
+                            <div class="week-text">
+                                <h2>Week 1 in Spain:</h2>
+                                <p>The first week at the University of Lleida focused on the start of our design work. Unlike the Netherlands, where the emphasis had been on technology, sensors, and data, Spain's focus was on user experience and visual design. We began planning our initial UI layouts and prototypes using a paper prototype and style guidelines so that everyone on the team would keep a consistent look and feel.</p>
+                
+                                <p>We then had a crash course on Figma and User Design from Koen to get familiar with the tool. During class, we created user profiles to define the people who would be using our system. We then used the paper prototype and style guidelines document as well as the paper prototype to develop our initial Figma design.</p>
+                
+                                <p>The way we were taught at UdL was very similar to Fontys. Lecturers acted more as guides than traditional teachers. We were given the freedom to work independently, explore ideas, and make decisions as a team. Just like at Fontys, the learning was project-driven and hands-on, with an expectation that students take initiative and responsibility for their progress. This approach encouraged us to think critically, experiment, and learn by doing rather than waiting for detailed instructions.</p>
+                
+                                <p>Monday was a public holiday, and Alexa invited us to a local festival with her brothers. It was very similar to the festival we saw in Barcelona; busy, colourful, and filled with music. We went out for dinner afterwards, but our food took so long to come that we ended up missing the fireworks.</p>
+                
+                                <p>Living in the apartment gave the week a different atmosphere. For the first time, we had a space that actually felt like home. We decided to cook dinner every night, taking turns between the South Africans and the girls. Those dinners became something we all looked forward to, a time to relax, eat, and talk after long days. We played games like UNO in the evenings and just enjoyed the downtime.</p>
+                
+                                <p>On Friday, we visited Aqualia, where they gave us a presentation about their work and a tour of their water quality facilities. It was interesting to see how their systems operate in real life, especially because it connected with the kind of projects we had been discussing earlier in the minor, it was also interesting to see how their processes differed from the Netherlands.</p>
+                
+                                <p>Over the weekend, we went back to Barcelona to explore more of the city. Outside one of the main churches, there was a band playing and they were teaching people a traditional Catalan dance. The crowd joined in, and the energy was great. There were also street vendors selling souvenirs and balloons, and unfortunately, a couple of us got caught in a small scam. A man gave Marco and me balloon animals and took pictures with us, saying they were free, then later followed us asking for €5. Before we could warn Jan, he also fell for it from another scammer on the other side. It was annoying but funny afterwards and is probably going to become one of those travel stories that stick with you.</p>
+                
+                                <h3>What I Learned?</h3>
+                                <p>This week gave me a better understanding of how design and usability fit into a project. I learned the basics of Figma and how to apply design principles like consistent colour use, spacing, and typography. Creating user profiles and paper prototypes helped me see how every design choice affects the final experience for real users.</p>
+                
+                                <p>The teaching style at UdL reminded me a lot of Fontys. Lecturers guided us through the work instead of leading step-by-step lessons. We were expected to take initiative, plan our own progress, and find solutions on our own. It was more about exploration and teamwork than instruction. This made me more independent and confident in figuring things out as I go.</p>
+                
+                                <p>I also learned how small things outside of class, like cooking together and spending time as a team, made collaboration smoother. It showed me that good teamwork isn't only about communication in meetings but also about building trust and comfort outside the classroom.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Week 2 Tab -->
+                <div class="tab-content" id="week2">
+                    <div class="content-card">
+                        <div class="week2-with-images">
+                            <div class="week2-text">
+                                <h2>Week 2 in Spain:</h2>
+                                <p>The second week in Spain was more structured and focused on refining our designs. After completing our initial prototypes in the first week, we shifted our attention to improving usability, consistency, and visual balance. Early in the week, we presented our first UI version to our classmates and lecturers, who provided detailed feedback on layout clarity, colour contrast, and navigation flow. This feedback was incredibly useful, as it highlighted areas we had overlooked during development. We then spent time reworking our interface, ensuring that every element aligned with the user experience principles we had been taught.</p>
+                
+                                <p>Midweek, we attended a session with one of the developers from Ruxaliab, who introduced us to their platform and explained how it could be used for user testing. He demonstrated how to set up experiments, run usability tests, and collect data from real users. Seeing a professional testing tool in action helped us understand how user feedback is systematically gathered and analysed in the industry. It connected theory to real-world application, and I quickly realized how vital this process is for creating intuitive and functional designs.</p>
+                
+                                <p>The rest of the week was dedicated to testing and iteration. We organized our own user tests, inviting people to interact with our prototype and complete specific tasks while we observed their behaviour and recorded feedback. These insights allowed us to make meaningful improvements, ensuring our design aligned more closely with user expectations.</p>
+                
+                                <p>Outside of class, the week followed a calm and enjoyable rhythm. I started going for morning runs around Lleida, which became a refreshing routine before the day's work. The early hours showed a quieter side of the city; peaceful streets, warm sunlight, and locals preparing for their day. Back at the apartment, our group continued the cooking tradition, experimenting with local ingredients and sharing meals together in the evenings. We played games like UNO and Mafia and shared stories from home. These moments strengthened our group bond.</p>
+                
+                                <p>Over the weekend, we joined a free tour of the Seu Vella, the old cathedral and fortress overlooking Lleida. It was National Spanish Day, so entrance to the site was free. The online guide shared fascinating stories about the history of Catalonia and how the cathedral played a key role during past conflicts. Standing on top of the castle, looking out over the entire city, felt like a reward after a busy week of work and learning.</p>
+                
+                                <h3>What I Learned?</h3>
+                                <p>This week deepened my understanding of user-centered design and the importance of testing with real people. I learned that design isn't about what looks good to the creator but about what feels natural and intuitive to the user. Conducting usability tests showed me that feedback is not criticism, it's a tool for growth.</p>
+                
+                                <p>On a personal level, I developed greater patience and adaptability. I learned to work at a pace that balances quality with creativity, and I realized that productivity doesn't always mean rushing through tasks, sometimes slowing down leads to better results. The experience also reminded me of the value of small routines, like exercise and shared meals, in maintaining focus and energy during demanding projects.</p>
+                
+                                <p>Overall, Week 2 was about refinement, both in design and in mindset. I became more confident in combining feedback with creativity, more aware of the user's perspective, and more appreciative of how collaboration and balance drive progress in international teamwork.</p>
+                            </div>
+
+                            <div class="week2-images">
+                                <div class="week2-image">
+                                    <img src="images/gallery/spain/149.jpg" alt="Loading Error">
+                                </div>
+                                <div class="week2-image">
+                                    <img src="images/gallery/spain/150.jpg" alt="Loading Error">
+                                </div>
+                                <div class="week2-image">
+                                    <img src="images/gallery/spain/159.jpg" alt="Loading Error">
+                                </div>
+                                <div class="week2-image">
+                                    <img src="images/gallery/spain/175.jpg" alt="Loading Error">
+                                </div>
+                                <div class="week2-image">
+                                    <img src="images/gallery/spain/262.jpg" alt="Loading Error">
+                                </div>
+                                <div class="week2-image">
+                                    <img src="images/gallery/spain/263.jpg" alt="Loading Error">
+                                </div>
+                                <div class="week2-image">
+                                    <img src="images/gallery/spain/264.jpg" alt="Loading Error">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Week 3 Tab -->
+                <div class="tab-content" id="week3">
+                    <div class="content-card">
+                        <div class="week-with-images">
+                            <div class="week-images">
+                                <div class="week-image">
+                                    <img src="images/gallery/spain/322.jpg" alt="Loading Error">
+                                </div>
+                                <div class="week-image">
+                                    <img src="images/gallery/spain/323.jpg" alt="Loading Error">
+                                </div>
+                                <div class="week-image">
+                                    <img src="images/gallery/spain/279.jpg" alt="Loading Error">
+                                </div>
+                                <div class="week-image">
+                                    <img src="images/gallery/spain/334.jpg" alt="Loading Error">
+                                </div>
+                                <div class="week-image">
+                                    <img src="images/gallery/spain/300.jpg" alt="Loading Error">
+                                </div>
+                
+                            </div>
+                            <div class="week-text">
+                                <h2>Week 3 in Spain:</h2>
+                                <p>The final week in Spain marked the conclusion of our UI prototyping. It was a busy but rewarding week, focused on final improvements, documentation, and reflection. Our main goal was to complete all project deliverables, including the improvement document, CIF report, user testing report, and updated prototype. This stage of the module required precision and teamwork, as every section had to align with our overall design vision and user experience goals.</p>
+                
+                                <p>Most of my time was spent finalizing both the technical and written components of our documentation. I focused on ensuring that the reports were clear, structured, and consistent, while also helping to polish the final Figma prototype.</p>
+                
+                                <p>As the workload intensified, our apartment remained the centre of both productivity and relaxation. We spent long hours working together around the dining table, with our favourite childhood shows; Mako Mermaids, Final Space, and Wolfblood, playing softly in the background. These small traditions created a comforting atmosphere and helped maintain balance during long work sessions. We continued our evening cooking routine, often ending the night with poker/mafia/uno games or late-night conversations about our experiences in both the Netherlands and Spain. These moments helped us reflect on how much we had grown individually and as a group.</p>
+                
+                                <p>We also visited Parc de la Mitjana, a large nature park on the outskirts of Lleida. It was the perfect way to close our time in Spain; quiet trails, flowing rivers, and open skies. The peaceful environment gave me space to appreciate what we had accomplished and to mentally transition from project mode to reflection.</p>
+                
+                                <h3>What I Learned?</h3>
+                                <p>I've learned how to take feedback, apply it effectively, and make steady improvements rather than rushing to a final version. It's now clearer to me that good design comes from iteration, testing, adjusting, and refining until everything feels right for the user.</p>
+                
+                                <p>I also realized how important it is to stay motivated when the end isn't in sight. Working through an unfinished stage taught me to focus on progress rather than completion. I learned how to manage tasks in an evolving project, keep documentation organized, and maintain communication within the team so that our work remains consistent as we continue building toward the final outcome.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intercultural Tab Section -->
+    <section class="tab-section" id="intercultural-tabs">
+        <div class="container">
+            <div class="section-title">
+                <h2>Intercultural & Personal Development</h2>
+                <p>Cultural experiences, competencies, and personal growth</p>
+            </div>
+            
+            <div class="tab-container">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="intercultural-exp">
+                        <i class="fas fa-globe-americas"></i> Intercultural Experiences
+                    </button>
+                    <button class="tab-btn" data-tab="intercultural-comp">
+                        <i class="fas fa-hands-helping"></i> Intercultural Competencies
+                    </button>
+                    <button class="tab-btn" data-tab="null-measurement">
+                        <i class="fas fa-chart-bar"></i> Null Measurement
+                    </button>
+                </div>
+                
+                <!-- Intercultural Experiences Tab -->
+                <div class="tab-content active" id="intercultural-exp">
+                    <div class="reflection-grid">
+                        <div class="reflection-card">
+                            <h3>Week 1 — What? So What? Now What?</h3>
+                            <p><strong>What?</strong><br>
+                            The first week in Spain was a big cultural shift after the Netherlands. The atmosphere was more social, and people seemed to enjoy taking things at their own pace. Rules were treated more as guidelines, and everything felt more flexible.</p>
+                            
+                            <p><strong>So What?</strong><br>
+                            This helped me see how much culture shapes teamwork and learning. In the Netherlands, structure and independence were key. In Spain, communication and group connection were more important. I noticed that I felt more at home in this environment, since South Africa also values personal interaction and community.</p>
+                            
+                            <p><strong>Now What?</strong><br>
+                            Going forward, I'll try to combine the best of both worlds, the structure and discipline I learned in the Netherlands with the adaptability and openness I experienced in Spain. It taught me that not every environment has to be efficient to be effective.</p>
+                        </div>
+                        
+                        <div class="reflection-card">
+                            <h3>Week 2 — STARR Reflection:</h3>
+                            <p><strong>Situation:</strong><br>
+                            During week two, we worked on finalizing and testing our first prototype. Our group is mixed in terms of culture and working style. Some wanted clear structure; others preferred to just start and figure things out.</p>
+                            
+                            <p><strong>Task:</strong><br>
+                            I was responsible for linking the technical and design sides of the project and helping coordinate the user tests through Ruxallab.</p>
+                            
+                            <p><strong>Action:</strong><br>
+                            I managed some of the documentation, made sure everyone's changes aligned, and helped with testing. I also had to adapt to the more relaxed pace of the Spanish way of working, which was very different from the Dutch approach.</p>
+                            
+                            <p><strong>Result:</strong><br>
+                            The outcome was successful. Even though the pace was slower, the work quality was high. The environment encouraged creativity and gave everyone a chance to contribute ideas freely.</p>
+                            
+                            <p><strong>Reflection:</strong><br>
+                            I learned that productivity looks different depending on the culture. The Netherlands taught me efficiency; Spain taught me patience. As a South African, I found myself balancing the two approaches. It showed me that being adaptable is one of my strongest skills.</p>
+                        </div>
+                        
+                        <div class="reflection-card">
+                            <h3>Week 3 — John's Model of Structured Reflection:</h3>
+                            <p><strong>Description:</strong><br>
+                            The last week focused on documentation, testing, and wrapping up everything we had worked on. The group worked smoothly, and everyone contributed equally.</p>
+                            
+                            <p><strong>Feelings:</strong><br>
+                            I felt both motivated and slightly pressured. On one hand, it was exciting to see our design taking shape; on the other, it was clear that there was still a long way to go. Despite the workload, I felt more confident in my role and more comfortable working in an international environment.</p>
+                            
+                            <p><strong>Evaluation:</strong><br>
+                            The teamwork was consistent, and communication was easy. I noticed that I was more confident about speaking up and suggesting ideas compared to earlier weeks.</p>
+                            
+                            <p><strong>Analysis:</strong><br>
+                            Working in two very different countries showed me how culture affects everything; from how people approach work to how they solve problems. I learned that structure and freedom both have their place, and the key is knowing when to use which one.</p>
+                            
+                            <p><strong>Conclusion:</strong><br>
+                            By this stage I've developed a better understanding of how to work with people from different backgrounds. I think that I've became more open, adaptable, and confident in my abilities.</p>
+                            
+                            <div class="action-plan">
+                                <h4>Action Plan:</h4>
+                                <ul>
+                                    <li>Stay patient and consistent throughout the next development stages.</li>
+                                    <li>Keep improving communication and coordination within the team.</li>
+                                    <li>Focus on progress and learning rather than rushing to completion.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Intercultural Competencies Tab -->
+                <div class="tab-content" id="intercultural-comp">
+                    <div class="content-card">
+                        <h2>Intercultural Competencies:</h2>
+                        <p>The Netherlands has a culture that is very structured and task oriented. People tend to follow schedules closely, stick to clear roles, and focus on efficiency and precision. Meetings are usually short and to the point, and work is approached with careful planning. Spontaneous ideas and informal social interaction are less common during work time, as the priority is on completing tasks effectively.</p>
+                        
+                        <p>In Spain, the culture is more relaxed and social. People take time to connect personally and enjoy conversations before or alongside work. Flexibility is common, and rules are often treated as guidelines rather than strict requirements. This creates a more informal, energetic atmosphere, where creativity and collaboration are encouraged. Decisions are often made through discussion and consensus, rather than following a strict hierarchy or timetable.</p>
+                        
+                        <p>South African culture shares similarities with Spain in terms of social connection and flexibility. People value personal interaction, community, and informal communication. Relationships are important in daily life and in teamwork, and there is a balance between following plans and adapting to changing circumstances. Like in Spain, this creates a lively and adaptable environment, where collaboration and problem-solving often involve negotiation and discussion rather than strict rules.</p>
+                        
+                        <p>Communication in the Netherlands tends to be direct and straightforward. People value clarity, honesty, and efficiency in how information is shared. In Spain, communication is generally warmer and more expressive. People use conversation to build relationships, and interactions often include humour, gestures, and personal anecdotes. Listening and dialogue are important for reaching agreement.</p>
+                        
+                        <p>Problem-solving and decision-making also differ between the two countries. In the Netherlands, issues are usually addressed quickly and pragmatically, with a focus on practical solutions. In Spain, solutions are often negotiated through discussion and compromise, taking into account relationships and group harmony. This approach allows for flexibility and creativity but can take more time to reach a final decision.</p>
+                        
+                        <div class="highlight-box">
+                            <p><strong>Note:</strong> Identifying the culture in Spain was challenging, as most people didn't speak English. I had to rely on observations of the few Spanish people I know and the classroom dynamics, so I made some assumptions based on these experiences. Therefore I am not 100% sure if my observations were correct or not.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Null Measurement Tab -->
+                <div class="tab-content" id="null-measurement">
+                    <div class="content-card">
+                        <h2>Null Measurement:</h2>
+                        
+                        <h3>1. What I Already Knew</h3>
+                        <p>Before starting the UI module, I already had a solid foundation in computing, programming, and problem-solving from my studies at Belgium Campus. I also had previous experience in international teamwork from the Netherlands part of the minor as well as other projects. I was confident in managing group communication, research, and project structure. My focus was mainly on logic, functionality, and technical implementation, rather than design or presentation.</p>
+                        
+                        <h3>2. What I Did Not Know (But Learned During This Module)</h3>
+                        <p>UI design introduced me to an entirely different side of project development, user experience and design. Before this, I had never gone in-depth with UI design or user testing. I learned how important it is to think about users from the start, not just after a product is finished.</p>
+                        
+                        <p>Through working with Figma and learning about user interface design, I gained an understanding of how colour, typography, and layout directly affect usability and perception. Using the correct colours, contrast, and font styling can completely change how accessible and visually appealing a product feels.</p>
+                        
+                        <p>The most valuable part of this module was learning how to correctly set up and conduct user tests. I learned how to prepare testing tasks, observe user behaviour, and collect feedback in a structured way. I also learned how to interpret that feedback and apply it to improve the prototype. This has completely changed how I look at project development.</p>
+                        
+                        <h3>3. What I Improved (Skills Strengthened Here)</h3>
+                        <p>I improved my ability to combine technical logic with creative design. I became better at communicating ideas visually and working with design tools like Figma. My teamwork and leadership skills also improved as I learned to balance structure with creativity in a more relaxed environment.</p>
+                        
+                        <p>Most importantly, I strengthened my ability to test and refine my work based on real data. I now understand the value of user testing, feedback, and visual design principles as part of the development process. These are lessons I plan to apply in all future projects.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning & Development Tab Section -->
+    <section class="tab-section" id="learning-tabs">
+        <div class="container">
+            <div class="section-title">
+                <h2>Learning & Development</h2>
+                <p>Explore my growth and contributions during the Spain UX Design module</p>
+            </div>
+            
+            <div class="tab-container">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="new-knowledge">
+                        <i class="fas fa-lightbulb"></i> New Knowledge
+                    </button>
+                    <button class="tab-btn" data-tab="skills-improved">
+                        <i class="fas fa-chart-line"></i> Skills Improved
+                    </button>
+                    <button class="tab-btn" data-tab="project-contributions">
+                        <i class="fas fa-tasks"></i> Project Contributions
+                    </button>
+                    <button class="tab-btn" data-tab="cultural-insights">
+                        <i class="fas fa-globe-americas"></i> Cultural Insights
+                    </button>
+                    <button class="tab-btn" data-tab="gallery">
+                        <i class="fas fa-images"></i> Photo & Video Gallery
+                    </button>
+                </div>
+                
+                <!-- New Knowledge Tab -->
+                <div class="tab-content active" id="new-knowledge">
+                    <div class="knowledge-grid">
+                        <div class="knowledge-card">
+                            <h3><i class="fas fa-palette"></i> UX Design Principles</h3>
+                            <p>Learned fundamental UX design principles including user-centered design, accessibility, and usability testing methodologies.</p>
+                        </div>
+                        <div class="knowledge-card">
+                            <h3><i class="fas fa-mobile-alt"></i> Figma Prototyping</h3>
+                            <p>Mastered Figma for creating interactive prototypes, wireframes, and design systems for web and mobile applications.</p>
+                        </div>
+                        <div class="knowledge-card">
+                            <h3><i class="fas fa-users"></i> User Testing Methods</h3>
+                            <p>Gained expertise in conducting usability tests, and gathering qualitative user feedback for design validation.</p>
+                        </div>
+                        <div class="knowledge-card">
+                            <h3><i class="fas fa-chart-bar"></i> Design Thinking</h3>
+                            <p>Applied design thinking methodologies to solve complex problems through empathy, ideation, and iterative prototyping.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Skills Improved Tab -->
+                <div class="tab-content" id="skills-improved">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-pencil-ruler"></i>
+                            </div>
+                            <h3>UI/UX Design</h3>
+                            <p>Enhanced ability to create intuitive user interfaces and seamless user experiences through iterative design processes.</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <h3>User Research</h3>
+                            <p>Improved skills in conducting user interviews, creating personas, and analyzing user behavior data.</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Prototyping</h3>
+                            <p>Developed prototyping skills using Figma, including interactive components and design systems.</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-users-cog"></i>
+                            </div>
+                            <h3>Team Collaboration</h3>
+                            <p>Strengthened ability to work effectively in multicultural teams and communicate design decisions clearly.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project Contributions Tab -->
+                <div class="tab-content" id="project-contributions">
+                    <ul class="contributions-list">
+                        <li class="contribution-item">
+                            <h3><i class="fas fa-mobile-alt"></i> Mobile App Redesign</h3>
+                            <p>Participated in the design and multiple redesigns of the UI, using paper prototypes, style guidelines, and figma prototypes.</p>
+                        </li>
+                        <li class="contribution-item">
+                            <h3><i class="fas fa-desktop"></i> Prototype Development</h3>
+                            <p>After designing, we built prototypes using Figma and Figma Make</p>
+                        </li>
+                        <li class="contribution-item">
+                            <h3><i class="fas fa-chart-line"></i> User Testing Coordination</h3>
+                            <p>Organized and conducted testing sessions, gathering valuable insights that informed major design decisions.</p>
+                        </li>
+                        <li class="contribution-item">
+                            <h3><i class="fas fa-file-alt"></i> Documentation & Guidelines</h3>
+                            <p>Helped to developed comprehensive design documentation and style guides to ensure design consistency across future iterations.</p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Cultural Insights Tab -->
+                <div class="tab-content" id="cultural-insights">
+                    <div class="cultural-grid">
+                        <div class="cultural-card">
+                            <div class="cultural-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h3>Work Culture</h3>
+                            <p>Adapted to the more relaxed Spanish work culture while maintaining productivity and meeting project deadlines.</p>
+                        </div>
+                        <div class="cultural-card">
+                            <div class="cultural-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <h3>Communication Style</h3>
+                            <p>Learned to navigate the expressive and relationship-focused communication style prevalent in Spanish culture.</p>
+                        </div>
+                        <div class="cultural-card">
+                            <div class="cultural-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Team Dynamics</h3>
+                            <p>Experienced how Spanish team dynamics emphasize collaboration and consensus-building over individual achievement.</p>
+                        </div>
+                        <div class="cultural-card">
+                            <div class="cultural-icon">
+                                <i class="fas fa-balance-scale"></i>
+                            </div>
+                            <h3>Work-Life Balance</h3>
+                            <p>Appreciated the Spanish emphasis on work-life balance and its positive impact on creativity and team morale.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Tab -->
+                <div class="tab-content" id="gallery">
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="images/gallery/spain/15.JPG" alt="Loading Error">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery/spain/16.JPG" alt="Loading Error">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery/spain/17.JPG" alt="Loading Error">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery/spain/76.JPG" alt="Loading Error">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery/spain/103.JPG" alt="Loading Error">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery/spain/1.JPG" alt="Loading Error">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery/spain/f2.png" alt="Loading Error">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/gallery/spain/Paper Prototype.jpg" alt="Loading Error">
+                        </div>
+                    </div>
+                    <section>
+                    <div class="container">
+
+                        <br>
+                        <p style="color: white; text-align: center;">If you want to view the entire gallery press the following button</p>
+
+                        <div class="back-button">
+                            <a href="https://belgiumcampusacza-my.sharepoint.com/my?id=%2Fpersonal%2F577362%5Fstudent%5Fbelgiumcampus%5Fac%5Fza%2FDocuments%2FGlobal%20Minor%20Gallery%2FSpain&viewid=c2f7d403%2Daf36%2D4879%2Db7ad%2Dc687acadb1f8&ga=1" class="btn btn-outline" style="background-color: orange;">Open Gallery</a>
+                        </div>
+                    </div>
+                </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Button nav Section -->
+    <section class="content-section">
+        <div class="container">
             <div class="back-button">
-                <a href="index.html" class="btn btn-outline">Back to Portfolio</a>
+                <a href="index.html" class="btn btn-outline">Back to Homepage</a>
+                <a href="netherlands.html" class="btn btn-outline">Netherlands Page</a>
+                <a href="austria.html" class="btn btn-outline">Austria Page</a>
+                <a href="belgium.html" class="btn btn-outline">Belgium Page</a>
+                <a href="south-africa.html" class="btn btn-outline">South Africa Page</a>
+                <a href="#top" class="btn btn-outline">Scroll To Top</a>
             </div>
         </div>
     </section>
@@ -100,26 +586,26 @@
                 </div>
                 <div class="footer-column">
                     <h3>Contact Information</h3>
-                <p>
-                    <i class="fas fa-envelope"></i> 
-                    <a href="mailto:577362@student.belgiumcampus.ac.za" 
-                        style="color: inherit; text-decoration: none; cursor: pointer;">
-                        577362@student.belgiumcampus.ac.za
-                    </a>
-                </p>
+                    <p>
+                        <i class="fas fa-envelope"></i> 
+                        <a href="mailto:577362@student.belgiumcampus.ac.za" 
+                            style="color: inherit; text-decoration: none; cursor: pointer;">
+                            577362@student.belgiumcampus.ac.za
+                        </a>
+                    </p>
 
-                <p>
-                    <i class="fas fa-map-marker-alt"></i> 
-                    <a href="https://www.google.com/maps/search/?api=1&query=Belgium+Campus+ITversity+Pretoria+South+Africa" 
-                        target="_blank" 
-                        style="color: inherit; text-decoration: none; cursor: pointer;">
-                            Belgium Campus, South Africa
-                    </a>
-                </p>
-                
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i> 
+                        <a href="https://www.google.com/maps/search/?api=1&query=Belgium+Campus+ITversity+Pretoria+South+Africa" 
+                            target="_blank" 
+                            style="color: inherit; text-decoration: none; cursor: pointer;">
+                                Belgium Campus, South Africa
+                        </a>
+                    </p>
+                    
                     <div class="social-links">
                         <a href="https://www.linkedin.com/in/mustapha-ismael-omar-2a2b11318/"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="Musti-Omar-97993"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/Musti-Omar-97993"><i class="fab fa-github"></i></a>
                         <a href="https://x.com/ismaelo4_omar?t=xHGk3rIhjxrR5720w_BGRA&s=08 "><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
@@ -137,6 +623,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="spain.js"></script>
+
 </body>
 </html>
