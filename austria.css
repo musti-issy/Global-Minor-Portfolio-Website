@@ -1,0 +1,988 @@
+/* austria.css */
+:root {
+    --primary: #2c3e50;
+    --secondary: #3498db;
+    --accent: #e74c3c;
+    --light: #ecf0f1;
+    --dark: #2c3e50;
+    --success: #2ecc71;
+    --warning: #f39c12;
+    --danger: #e74c3c;
+    --font-main: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background: linear-gradient(135deg, #0f1924 0%, #1a2a3a 50%, #2c3e50 100%);
+    color: var(--light);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header Styles */
+header {
+    background: rgba(44, 62, 80, 0.95);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+header.scrolled {
+    background: rgba(15, 25, 36, 0.95);
+    padding: 5px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--light);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo i {
+    color: var(--secondary);
+}
+
+/* Austrian Flag */
+.austria-flag {
+    width: 24px;
+    height: 16px;
+    background: 
+        linear-gradient(to bottom,
+            #ed2939 0%, #ed2939 33%,
+            white 33%, white 66%,
+            #ed2939 66%, #ed2939 100%);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    display: inline-block;
+    vertical-align: middle;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.austria-flag:hover {
+    transform: scale(1.1);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: var(--light);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    position: relative;
+    padding: 5px 0;
+}
+
+nav ul li a:hover {
+    color: var(--secondary);
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--secondary);
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.mobile-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.page-hero {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, rgba(237, 41, 57, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%), url('https://images.unsplash.com/photo-1516550893923-42d28e5677af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+    margin-top: 80px;
+}
+
+.page-hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.page-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.page-hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: var(--secondary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+}
+
+.btn:hover::before {
+    left: 100%;
+}
+
+.btn:hover {
+    background: #f39c12;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--secondary);
+    margin-left: 15px;
+}
+
+.btn-outline:hover {
+    background: var(--secondary);
+}
+
+/* Content Sections */
+.content-section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: var(--secondary);
+    border-radius: 2px;
+}
+
+.section-title p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #bdc3c7;
+}
+
+/* Content Cards */
+.content-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.content-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s, transform 0.6s;
+}
+
+.content-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.content-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: var(--light);
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.content-card h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--secondary);
+}
+
+.content-card h3 {
+    font-size: 1.4rem;
+    margin: 25px 0 15px;
+    color: var(--secondary);
+}
+
+.content-card p {
+    margin-bottom: 15px;
+    color: #bdc3c7;
+}
+
+.highlight-box {
+    background: rgba(52, 152, 219, 0.1);
+    border-left: 4px solid var(--secondary);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 0 5px 5px 0;
+}
+
+.reflection-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.reflection-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.reflection-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--secondary), #2980b9);
+}
+
+.reflection-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.reflection-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: var(--light);
+}
+
+.reflection-card p {
+    margin-bottom: 10px;
+    color: #bdc3c7;
+}
+
+.learning-list {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.learning-list li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+    color: #bdc3c7;
+}
+
+.learning-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+.link-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.action-plan {
+    background: rgba(52, 152, 219, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.action-plan ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.action-plan li {
+    padding: 8px 0;
+    position: relative;
+    padding-left: 25px;
+    color: #bdc3c7;
+}
+
+.action-plan li::before {
+    content: '○';
+    position: absolute;
+    left: 0;
+    color: var(--secondary);
+}
+
+/* Tab Control Section */
+.tab-section {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 80px 0;
+}
+
+.tab-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tab-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tab-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: #bdc3c7;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tab-btn:hover {
+    background: var(--secondary);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.tab-btn.active {
+    background: var(--secondary);
+    color: white;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+}
+
+.tab-content {
+    display: none;
+    animation: fadeIn 0.6s ease;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Tab Content Styles */
+.knowledge-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.knowledge-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s;
+}
+
+.knowledge-card:hover {
+    transform: translateY(-5px);
+}
+
+.knowledge-card h3 {
+    color: var(--light);
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.knowledge-card h3 i {
+    color: var(--secondary);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.skill-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+.skill-icon {
+    background: var(--secondary);
+    color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 1.8rem;
+}
+
+.skill-card h3 {
+    color: var(--light);
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.contributions-list {
+    list-style: none;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contribution-item {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s;
+}
+
+.contribution-item:hover {
+    transform: translateX(5px);
+}
+
+.contribution-item h3 {
+    color: var(--light);
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contribution-item h3 i {
+    color: var(--secondary);
+}
+
+.cultural-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.cultural-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.cultural-card:hover {
+    transform: translateY(-5px);
+}
+
+.cultural-icon {
+    background: var(--secondary);
+    color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 1.8rem;
+}
+
+.cultural-card h3 {
+    color: var(--light);
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+/* Week 1 & 3 Layout with Images */
+.week-with-images {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.week-images {
+    flex: 0 0 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.week-image {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.week-image:hover {
+    transform: translateY(-5px);
+}
+
+.week-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.week-image:hover img {
+    transform: scale(1.05);
+}
+
+.week-image-caption {
+    padding: 10px;
+    text-align: center;
+    color: #bdc3c7;
+    font-size: 0.85rem;
+    font-style: italic;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.week-text {
+    flex: 1;
+}
+
+/* Week 2 Layout with Images on Right */
+.week2-with-images {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.week2-images {
+    flex: 0 0 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    order: 2; /* This moves images to the right */
+}
+
+.week2-image {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.week2-image:hover {
+    transform: translateY(-5px);
+}
+
+.week2-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.week2-image:hover img {
+    transform: scale(1.05);
+}
+
+.week2-image-caption {
+    padding: 10px;
+    text-align: center;
+    color: #bdc3c7;
+    font-size: 0.85rem;
+    font-style: italic;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.week2-text {
+    flex: 1;
+    order: 1; /* This keeps text on the left */
+}
+
+/* Gallery Styles */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.gallery-item img,
+.gallery-item video {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+    border-radius: 12px;
+}
+
+.gallery-item:hover img,
+.gallery-item:hover video {
+    transform: scale(1.05);
+}
+
+.gallery-caption {
+    padding: 15px;
+    text-align: center;
+    color: #bdc3c7;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+    background: #0f1924;
+    color: white;
+    padding: 60px 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-column h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: var(--secondary);
+}
+
+.footer-column p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: #bdc3c7;
+}
+
+.footer-column a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column a:hover {
+    color: var(--secondary);
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.social-links a:hover {
+    background-color: var(--secondary);
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #bdc3c7;
+    font-size: 0.9rem;
+}
+
+.back-button {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mobile-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(44, 62, 80, 0.95);
+        padding: 20px;
+        backdrop-filter: blur(10px);
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .page-hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .tab-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tab-btn {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+
+    .week-with-images {
+        flex-direction: column;
+    }
+
+    .week-images {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .week-image {
+        flex: 1 1 45%;
+        min-width: 150px;
+    }
+
+    .week2-with-images {
+        flex-direction: column;
+    }
+
+    .week2-images {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        order: 1; /* Reset order for mobile */
+    }
+
+    .week2-image {
+        flex: 1 1 45%;
+        min-width: 150px;
+    }
+
+    .week2-text {
+        order: 2; /* Reset order for mobile */
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 15px;
+    }
+
+    /* Austrian Flag Responsive */
+    .austria-flag {
+        width: 20px;
+        height: 13px;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .week-images {
+        flex-direction: column;
+    }
+
+    .week-image {
+        flex: 1 1 100%;
+    }
+
+    .week2-images {
+        flex-direction: column;
+    }
+
+    .week2-image {
+        flex: 1 1 100%;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 12px;
+    }
+
+    .knowledge-grid,
+    .skills-grid,
+    .cultural-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Austrian Flag Responsive */
+    .austria-flag {
+        width: 18px;
+        height: 12px;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+        gap: 6px;
+    }
+
+    .logo span {
+        font-size: 0.9rem;
+    }
+}
